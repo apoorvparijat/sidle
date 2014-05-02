@@ -1,0 +1,22 @@
+{
+  "name": "ui-sass",
+  "version": "0.0.1",
+  "description": "Sass UI components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "ui"
+  ],
+  "author": "Apoorv Parijat",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-haml": "~0.1.2",
+    "grunt-contrib-coffee": "~0.10.1"
+  }
+}
