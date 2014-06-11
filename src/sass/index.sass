@@ -1,2 +1,35 @@
+@import 'bourbon'
+
+@mixin button($color)
+  position: relative
+  background-color: $color
+  color: lighten(white, 15%)
+  font-family: 'Helvetica Neue'
+  border-radius: 3px
+  padding: 8px 10px
+  cursor: pointer
+
+  &:hover
+    background-color: darken($color, 15%)
+    top: 5px
+    @include transition(all, 1s)
+
 body
-  margin: 12px
+  padding: 0
+  margin: 0
+  outline: 0
+
+  #container
+    text-align: center
+    margin-top: 20%
+    padding: 30px
+
+    .button
+      display: inline-block
+      margin-right: 10px
+
+      &.button-red
+        @include button(#FF4136)
+
+      &.button-green
+        @include button(#2ECC40)

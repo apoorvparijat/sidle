@@ -12,6 +12,7 @@ module.exports = (grunt) ->
       dist:
         options:
           style: 'expanded'
+          loadPath: require('node-bourbon').includePaths
         src: 'src/sass/**/*.sass'
         dest: 'www/css/style.css'
     coffee:
@@ -30,5 +31,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-connect'
 
   grunt.registerTask 'default', 'haml'
